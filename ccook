@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+	int i,j,k,t,n;
+	//cin>>t;
+	t=1;
+	while(t--)
+	{
+		cin>>n;
+		int a[n][5];
+		for(i=0;i<n;i++)
+		for(j=0;j<5;j++)
+		cin>>a[i][j];
+		for(i=0;i<n;i++)
+		{
+			int count=0;
+			for(j=0;j<5;j++)
+			count+=a[i][j];
+			if(count==0)
+			cout<<"Beginner"<<endl;
+			else if(count==1)
+			cout<<"Junior Developer"<<endl;
+			else if(count==2)
+			cout<<"Middle Developer"<<endl;
+			else if(count==3)
+			cout<<"Senior Developer"<<endl;
+			else if(count==4)
+			cout<<"Hacker"<<endl;
+			else if(count==5)
+			cout<<"Jeff Dean"<<endl;
+			
+		}
+	}
+} 
