@@ -1,0 +1,10 @@
+function [mu_im,sigma_im] = mean_var (J)
+[r,c] = size(J);
+% Mean and Variance Calculation
+mu_im= sum(J(:))/(r*c);
+totdiff = (J-mu_im).^2;
+totsum = sum(totdiff(:));
+totvar = totsum/((r*c-1));
+sigma_im = sqrt(totvar);
+
+end
