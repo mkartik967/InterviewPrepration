@@ -1,0 +1,8 @@
+function [a] = nearest_pt (d,c)
+for j = 1:256
+if d <= c(j)
+a = j-1;
+break ;
+end 
+end
+end
